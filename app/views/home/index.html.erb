@@ -1,0 +1,38 @@
+<h1>Days Permalink Embed Page</h1>
+
+
+<head>
+<script language="javascript">
+function texter()
+{
+var textField;
+textField = txtone.value;
+textFieldLength = txtone.value.length;
+var width;
+width = txttwo.value;
+var src;
+src = txtthree.value;
+
+if (textFieldLength==0)
+{
+txtone.value=prompt("Please enter someting","");
+}
+else
+{ 
+result.innerHTML ='&#60;iframe height="'+textField+ '"width="'+width+'" src="'+src+'"&#62;&#60;/iframe&#62;';
+}
+}
+</script>
+</head>
+
+<body>
+Height<input type = "text" id = "txtone" >
+Width<input type = "text" id = "txttwo" >
+Link <input type = "text" id = "txtthree" >
+<input type= "button" value = "submit" onclick = "texter()">
+<div id="result"></div>
+</body>
+
+
+
+<iframe height="700" width="700" src="https://www.days.am/stories/WLjrSyhvpI4"x></iframe>
